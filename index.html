@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Радиоателье</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Радиоателье</h1>
+    <form id="receiptForm">
+      <label for="group">Группа изделий:</label>
+      <input type="text" id="group" name="group">
+      <label for="brand">Марка изделия:</label>
+      <input type="text" id="brand" name="brand">
+      <label for="receptionDate">Дата приемки:</label>
+      <input type="date" id="receptionDate" name="receptionDate">
+      <label for="completionDate">Дата исполнения заказа:</label>
+      <input type="date" id="completionDate" name="completionDate">
+      <label for="completed">Выполнен:</label>
+      <input type="checkbox" id="completed" name="completed">
+      <button type="submit">Добавить квитанцию</button>
+    </form>
+
+    <!-- Форма для поиска и сортировки -->
+    <form id="searchForm">
+      <label for="searchGroup">Группа изделий:</label>
+      <input type="text" id="searchGroup" name="searchGroup">
+      <label for="searchReceptionDate">Дата приемки:</label>
+      <input type="date" id="searchReceptionDate" name="searchReceptionDate">
+      <label for="searchCompletionDate">Дата исполнения заказа:</label>
+      <input type="date" id="searchCompletionDate" name="searchCompletionDate">
+      <button type="button" id="searchButton">Найти</button>
+    </form>
+
+    <button type="button" id="sortButton">Сортировать по дате исполнения</button>
+
+    <div id="results">
+      <!-- Результаты операций будут отображены здесь -->
+    </div>
+  </div>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
